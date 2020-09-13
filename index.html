@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <button onclick="clearHtmlText()">Clear</button>
+        <div class="text-old">
+            <textarea id="oldText" placeholder="insert your text here"></textarea>
+        </div>
+    </div>
+    <button onclick="myFunction()">Convert</button>
+    <div>
+        <button onclick="clearConvertedText()">Clear</button>
+        <div class="text-new">
+            <p id="newText"></p>
+        </div>
+    </div>
+
+    <div class="select is-active"><!--Select-->
+        <div class="select__header">
+            <span class="select__current">black</span>
+            <div class="select__icon">&#10003;</div>
+        </div>
+        <div class="select__body">
+            <div class="select__item" onclick="black()">black</div>
+            <div class="select__item" onclick="red()">red</div>
+            <div class="select__item" onclick="green()">green</div>
+            <div class="select__item" onclick="maroon()">maroon</div>
+            <div class="select__item" onclick="mediumorchid()">mediumorchid</div>
+            <div class="select__item" onclick="coral()">coral</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
